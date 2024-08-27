@@ -22,7 +22,7 @@ public class HomeController {
 		return "home";
 	}
 
-	@RequestMapping(value = "/customer", method = RequestMethod.POST) // 사용자 등록.
+	@RequestMapping(value = "/customer", method = RequestMethod.POST)
 	public String customerJoin() {
 
 		return "customerJoin";

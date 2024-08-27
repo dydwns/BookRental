@@ -1,0 +1,8 @@
+create table member_tbl(
+     cust_no int not null,
+     cust_name varchar(20),
+     phone varchar(20),
+     join_date datetime default current_timestamp
+     cust_email varchar(50),
+     grade varchar(20)
+     primary key(cust_no)
