@@ -50,8 +50,5 @@
 		<servlet-name>appServlet</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-<servlet>
-    <servlet-name>CoustomerList</servlet-name>
-    <servlet-class>com.book.rental</servlet-class>
 
 </web-app>

@@ -22,7 +22,7 @@ public class MySQLConnectionTest {
 
      try (Connection con = ds.getConnection()) {
 
-         System.out.println("\n >>>>>>>>>> Connection Ãâ·Â : " + con + "\n");
+         System.out.println("\n >>>>>>>>>> Connection : " + con + "\n");
 
      } catch (Exception e) {
          e.printStackTrace();

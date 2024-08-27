@@ -23,7 +23,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="customer">고객등록</a></li>
+                        <li class="nav-item"><a class="nav-link" href="customerJoin">고객등록</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">고객목록조회/수정</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">고객대여리스트</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">고객대여금액조회</a></li>
