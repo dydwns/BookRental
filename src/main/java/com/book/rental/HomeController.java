@@ -16,18 +16,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Controller
 public class HomeController {
-	@RequestMapping("/")
+	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home() {
 
 		return "home";
 	}
 
-	@RequestMapping("/customer") // 사용자 등록.
+	@RequestMapping(value = "/customer", method = RequestMethod.POST) // 사용자 등록.
 	public String customerJoin() {
 
 		return "customerJoin";
 	
 		
 	}
-	
 }
