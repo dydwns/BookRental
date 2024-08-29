@@ -1,8 +1,19 @@
 create table member_tbl(
-     cust_no int not null,
+     cust_no int not null AUTO_INCREMENT PRIMARY KEY,
      cust_name varchar(20),
      phone varchar(20),
-     join_date datetime default current_timestamp
+     join_date datetime default current_timestamp,
      cust_email varchar(50),
-     grade varchar(20)
-     primary key(cust_no)
+     grade varchar(20) );
+
+insert into member_tbl (cust_no, cust_name, phone, join_date, cust_email, grade)
+value ('100001', 'Park-mail', '01011111111', '2023-04-11', 'bit01@naver.com', 'P'),
+	('100002', 'Lee-Belive', '01011111112', '2023-04-12', 'bit02@naver.com', 'G'),
+	('100003', 'Park-Bless', '01011111113', '2023-04-13', 'bit03@naver.com', 'S'),
+	('100004', 'Na-Wish', '01011111114', '2023-04-14', 'bit04@naver.com', 'P'),
+	('100005', 'Kim-Happy', '01011111115', '2023-04-15', 'bit05@naver.com', 'G');
+
+insert into member_tbl (cust_name, phone, join_date, cust_email, grade)
+value ( 'park', '01011111111', '2023-04-11', 'bit01@naver.com', 'P');
+
+insert into member_tbl (cust_name, phone, join_date, cust_email, grade) value ( '박', '01011111111', '2023-04-11', 'bit01@naver.com', 'P');
