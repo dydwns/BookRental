@@ -1,6 +1,7 @@
 package com.book.rental;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -24,4 +25,10 @@ public class HomeController {
     public String joinCustomer() {
         return "customerJoin";
     }
+
+    @RequestMapping(value = "/custmoers", method = RequestMethod.GET)
+    public String checkCustomer() {
+        return "check";
+    }
+
 }
