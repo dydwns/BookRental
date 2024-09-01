@@ -1,7 +1,7 @@
 USE fc;
 
 -- 테이블 생성
-create table member_tbl
+create table customer_tbl
 (
     cust_no    int not null AUTO_INCREMENT PRIMARY KEY,
     cust_name  varchar(20),

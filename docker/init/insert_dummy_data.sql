@@ -1,7 +1,7 @@
 USE fc;
 -- 더미 데이터 삽입
 
-insert into member_tbl (cust_no, cust_name, phone, join_date, cust_email, grade)
+insert into customer_tbl (cust_no, cust_name, phone, join_date, cust_email, grade)
     value ('100001', 'Park-mail', '01011111111', '2023-04-11', 'bit01@naver.com', 'P'),
 	('100002', 'Lee-Belive', '01011111112', '2023-04-12', 'bit02@naver.com', 'G'),
 	('100003', 'Park-Bless', '01011111113', '2023-04-13', 'bit03@naver.com', 'S'),
