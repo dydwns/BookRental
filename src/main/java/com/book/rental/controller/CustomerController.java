@@ -32,7 +32,7 @@ public class CustomerController {
     @PostMapping("customer/join")
     public String processJoinForm() {
         // 여기에 고객 등록 로직을 구현하세요
-        return "redirect:/customer/list";
+        return "redirect:/customers";
     }
 
     @GetMapping("customer/{cust_no}")

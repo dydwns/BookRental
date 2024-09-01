@@ -40,7 +40,7 @@
     </div>
     <div class="text-center mt-3">
         <a href="/customer/edit/${customer.cust_no}" class="btn btn-primary">정보 수정</a>
-        <a href="/customer/list" class="btn btn-secondary">목록으로</a>
+        <a href="/customers" class="btn btn-secondary">목록으로</a>
     </div>
 </div>
 
