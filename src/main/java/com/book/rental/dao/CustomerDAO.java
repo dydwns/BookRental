@@ -22,7 +22,6 @@ public class CustomerDAO {
     }
 
     public int updateOne(CustomerVO customer) {
-        System.out.println(customer);
         return mybatis.update("com.book.rental.mappers.customer.update", customer);
     }
 }

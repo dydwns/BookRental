@@ -25,10 +25,6 @@ public class CustomerService {
     }
 
     public int updateCustomer(CustomerVO customer) {
-
-        System.out.println("updateCustomer start");
-        System.out.println(customer);
-        System.out.println("updateCustomer end");
         return dao.updateOne(customer);
     }
 
