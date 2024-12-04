@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.book.rental.mappers.customer">
+    <select id="findAll" resultType="com.book.rental.vo.CustomerVO">
+        SELECT cust_no
+             , cust_name
+             , phone
+             , join_date
+             , cust_email
+             , grade
+        FROM customer_tbl;
+    </select>
+
+    <select id="findOne" resultType="com.book.rental.vo.CustomerVO">
+        SELECT cust_no
+             , cust_name
+             , phone
+             , join_date
+             , cust_email
+             , grade
+        FROM customer_tbl
+        WHERE cust_no = #{cust_no};
+    </select>
+
+    <update id="update" parameterType="com.book.rental.vo.CustomerVO">
+        UPDATE customer_tbl
+        SET cust_name  = #{cust_name},
+            phone      = #{phone},
+            cust_email = #{cust_email}
+        WHERE cust_no = #{cust_no}
+    </update>
+</mapper>  
+    		
